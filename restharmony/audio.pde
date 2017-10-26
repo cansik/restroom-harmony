@@ -1,18 +1,27 @@
-Minim minim;
-AudioPlayer track1;
-AudioPlayer track2;
-AudioPlayer track3;
+import processing.sound.*;
+
+SoundFile track1;
+SoundFile track2;
+SoundFile track3;
 
 void setupAudio()
 {
-  minim = new Minim(this);
-  track1 = minim.loadFile("track1.wav", 2048);
-  track2 = minim.loadFile("track2.wav", 2048);
-  track3 = minim.loadFile("track3.wav", 2048);
+  track1 = new SoundFile(this, "track1.wav");
+  track2 = new SoundFile(this, "track2.wav");
+  track3 = new SoundFile(this, "track3.wav");
 }
 
 void playAudio()
 {
+  track1.play();
+  track1.stop();
+
+  track2.play();
+  track2.stop();
+
+  track3.play();
+  track3.stop();
+
   track1.loop();
   track2.loop();
   track3.loop();
