@@ -26,4 +26,8 @@ sudo mv oscP5 /home/pi/sketchbook/libraries
 
 # minim
 wget -qO- https://github.com/ddf/Minim/archive/v2.2.2.zip | jar xvf /dev/stdin
-sudo mv oscP5 /home/pi/sketchbook/libraries
+sudo mv Minim-2.2.2 /home/pi/sketchbook/libraries
+
+# sound
+wget -qO- https://github.com/processing/processing-sound/releases/download/latest/sound.zip | jar xvf /dev/stdin
+sudo mv sound /home/pi/sketchbook/libraries

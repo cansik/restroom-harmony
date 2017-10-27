@@ -5,8 +5,8 @@ OscP5 oscP5;
 
 void setup()
 {
-  //size(640, 480, P2D);
-  fullScreen(P2D);
+  size(640, 480);
+  //fullScreen(P2D);
 
   textSize(30);
   textAlign(CENTER, CENTER);
