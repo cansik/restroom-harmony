@@ -57,3 +57,6 @@ dtparam=audio=on
 
 #increase gpu memory
 gpu_mem=128
+
+# experimential audio
+audio_pwm_mode=2
