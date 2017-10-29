@@ -16,7 +16,7 @@ void setup()
 
   setupAudio();
   playAudio();
-  
+
   noCursor();
 }
 
@@ -35,6 +35,8 @@ void draw()
     textAlign(RIGHT, CENTER);
     text("bildspur.ch", width - 50, height - 50);
   }
+
+  updatePlayer();
 }
 
 void stop()
